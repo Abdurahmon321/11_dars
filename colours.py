@@ -9,9 +9,7 @@ def colored_print(text, color="red"):
     }
     end_color = "\033[0m"
 
-    color_code = colors.get(color.lower(), "")
-    if not color_code:
-        return
+    color_code = colors.get(color.lower())
     return color_code + text + end_color
 
 
